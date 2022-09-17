@@ -54,7 +54,10 @@
         <li class="col-6 justify-content-between mt-5">
           <!-- Adds comment with username of poster -->
           <%= comments[i].comment%>
-          <b><%= comments[i].userName%> </b>
+          <br>
+          <b>Comment by: <%= comments[i].userName.toUpperCase()%> </b>
+          <br>
+          <%= comments[i].createdAt%>
 
           <!-- Add Like and delete buttons to comment-->
           <div class="row justify-content-between">
